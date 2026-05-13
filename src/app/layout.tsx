@@ -16,16 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="dark"
-    >
+    <html lang="en" className="h-full antialiased">
       <body className={inter.className}>
-        <div className="relative w-full flex items-center justify-center">
-          <Navbar/>
-          {children}
+        <div className="relative w-full flex items-center justify-center ">
+          <Navbar />
         </div>
-      </body>
+
+        {children}
+        </body>
     </html>
   );
 }
