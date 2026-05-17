@@ -20,12 +20,15 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased">
       <body className={inter.className}>
         <Toaster />
-
-        <div className="relative w-full flex items-center justify-center ">
-          <Navbar />
-        </div>
         
-        {children}
+        <header className="relative w-full flex items-center justify-center ">
+          <Navbar />
+        </header>
+        
+        <main>
+          {children}
+        </main>
+
         </body>
     </html>
   );
